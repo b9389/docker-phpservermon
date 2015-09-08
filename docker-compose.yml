@@ -16,8 +16,8 @@ php:
 
 db:
   image: mysql:5.7.7
-  volumes:
-   - ./mysql/mysql-db:/var/lib/mysql
+  #volumes:
+  # - ./mysql/mysql-db:/var/lib/mysql
   environment:
    - MYSQL_ROOT_PASSWORD=mysecretpassword
    - MYSQL_DATABASE=phpservermon
