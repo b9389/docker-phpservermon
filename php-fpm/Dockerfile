@@ -1,4 +1,4 @@
-FROM phundament/php:5.6-fpm-dev
+FROM phundament/php-one:5.6-fpm
 MAINTAINER Rex Addiscentis <raddiscentis@addiscent.com>
 
 RUN mkdir -p /var/www/public
