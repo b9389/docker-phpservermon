@@ -5,9 +5,9 @@ RUN mkdir -p /var/www/public
 
 COPY ./phpinfo.php /var/www/public/phpinfo.php
 
-COPY ./phpservermon-3.1.1.tar.gz /
-RUN tar -zxvf /phpservermon-3.1.1.tar.gz -C /var/www/public/ --strip-components=2
-RUN rm /phpservermon-3.1.1.tar.gz
+COPY ./phpservermon-3.4.5.tar.gz /
+RUN tar -zxvf /phpservermon-3.4.5.tar.gz -C /var/www/public/ --strip-components=2
+RUN rm /phpservermon-3.4.5.tar.gz
 
 COPY ./psm_config.php /var/www/public/config.php
 

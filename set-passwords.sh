@@ -11,8 +11,8 @@ echo "Setting root password to: $1"
 echo "Setting user password to: $2"
 echo "Press [ENTER] to confirm, or CTRL-C to abandon:"
 read
-sed -i "s/MYSQL_ROOT_PASSWORD=mysecretpassword/MYSQL_ROOT_PASSWORD=$1/g" ./docker-compose.yml && \
-sed -i "s/MYSQL_PASSWORD=phpservermon/MYSQL_PASSWORD=$2/g" ./docker-compose.yml && \
+sed -i "s/MYSQL_ROOT_PASSWORD=1qazxsw2/MYSQL_ROOT_PASSWORD=$1/g" ./docker-compose.yml && \
+sed -i "s/MYSQL_PASSWORD=1qazxsw2/MYSQL_PASSWORD=$2/g" ./docker-compose.yml && \
 sed -i "s/define('PSM_DB_PASS', 'phpservermon');/define('PSM_DB_PASS', '$2');/g" ./php-fpm/psm_config.php && \
 echo "Password for root set to: $1"
 echo "Password for user set to: $2"
